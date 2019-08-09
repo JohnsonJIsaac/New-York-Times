@@ -18,5 +18,14 @@ const queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=ele
                 + term + "&" + records + "&" +startyYear + "&" + endYear + "&api-key=" + APIKEY;
 
 
+    // * Take note of various “bugs” that appear with certain searches.
 
-fetch(function)
+
+fetch(queryURL).then(function(response) {
+    return response.json();
+    }).then(function(responseJson) {
+    console.log(responseJson);
+
+    // document.querySelector("#movie-view").innerHTML = JSON.stringify(responseJson);
+    // console.log(document.querySelector("#movie-view"));
+    })
