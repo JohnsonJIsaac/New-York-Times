@@ -1,0 +1,43 @@
+
+header {
+    background: darkslateblue;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    transform: 50% -50%;
+
+}
+
+p.search, .topArticles {
+    background: lightgray;
+    padding: 5px;
+    padding-bottom: 1px;
+}
+
+p.search {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.mainContainer {
+    border: 1px solid grey;
+    padding: 10px;
+    
+
+}
+
+.secondaryContainer {
+    margin-top: 20px;
+    border: 1px solid grey;
+    padding: 10px;
+    font-weight: bold;
+}
+
+pt
