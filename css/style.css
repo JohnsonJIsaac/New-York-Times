@@ -1,41 +1,45 @@
+ body {
+    font-family: 'Roboto', sans-serif;
+ }
 
 header {
     background: darkslateblue;
-    padding: 40px;
+    padding: 35px;
     color: #fff;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 .container {
     margin: 0 auto;
     padding: 20px;
-    transform: 50% -50%;
-
 }
 
-p.search, .topArticles {
+.topArticles {
     background: lightgray;
     padding: 5px;
     padding-bottom: 1px;
 }
 
-p.search {
+.search {
     margin-bottom: 10px;
     margin-top: 0;
 }
 
 .mainContainer {
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     padding: 10px;
-    
+}
 
+label.topArticles.d-block.p-2 {
+    font-weight: bold;
 }
 
 .secondaryContainer {
     margin-top: 20px;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     padding: 10px;
     font-weight: bold;
 }
