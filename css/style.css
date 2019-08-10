@@ -4,44 +4,25 @@
 
 header {
     background: darkslateblue;
-    padding: 35px;
     color: #fff;
     text-align: center;
-    margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
-
 }
 
-.container {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.topArticles {
-    background: lightgray;
-    padding: 5px;
-    padding-bottom: 1px;
-}
-
-.search {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.mainContainer {
-    border: 1px solid lightgray;
-    padding: 10px;
-}
-
-label.topArticles.d-block.p-2 {
+label.tintBox.d-block.p-2 {
     font-weight: bold;
 }
 
-.secondaryContainer {
-    margin-top: 20px;
-    border: 1px solid lightgray;
-    padding: 10px;
+.bold {
     font-weight: bold;
 }
 
-pt
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    i.fa.fa-newspaper-o, i.fa.fa-calendar {
+        display: none;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}

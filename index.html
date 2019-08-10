@@ -11,52 +11,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <Header>
+    <div class="container p-md-4 pt-md-5">
+        <Header class="p-5 mb-md-3">
             <h1><i class="fa fa-newspaper-o" aria-hidden="true"></i> New York Times Search</h1>
         </Header>
-    
-        <form>
-            <div class="mainContainer">
-                <div class="topArticles form-group">
-                    <label class="topArticles d-block p-2"><i class="fa fa-calendar" aria-hidden="true"> </i> Search Parameters</label>
-                </div>
+        <section class="search">
+            <form>
+                <div class="mainContainer border border-grey p-2">
+                    <div class="searchParameters form-group">
+                        <label class="bold bg-light d-block p-3"><i class="fa fa-calendar" aria-hidden="true"> </i> Search Parameters</label>
+                    </div>
 
-                <div class="form-group mt-4">
-                    <label for="exampleFormControlInput1">Search Term:</label>
-                    <input type="text" class="form-control" id="searchTerm">
-                </div>
-    
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Number of Records to Retrieve:</label>
-                    <input type="number" class="form-control" id="numRecords">
+                    <div class="form-group mt-4">
+                        <label for="exampleFormControlInput1">Search Term:</label>
+                        <input type="text" class="form-control" id="searchTerm">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Number of Records to Retrieve:</label>
+                        <input type="number" class="form-control" id="numRecords">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Start Year (Optional):</label>
+                        <input type="month" class="form-control" id="yearStart">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">End of Year (Optional):</label>
+                        <input type="month" class="form-control" id="yearEnd">
+                    </div>
+        
+                    <div class="form">
+                        <button type="submit" class="btn submit mb-2"><i class="fa fa-search" aria-hidden="true"> </i> Search</button>
+                        <button type="submit" class="btn reset mb-2"><i class="fa fa-trash" aria-hidden="true"> </i> Clear Results</button>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Start Year (Optional):</label>
-                    <input type="month" class="form-control" id="yearStart">
+                <div class="bold p-2 mt-3 border border-grey">
+                    <div class="form-group">
+                        <label class="bg-light d-block p-3"><i class="fa fa-calendar" aria-hidden="true"> </i> Top Articles</label>
+                        <input type="text" class="form-control" id="topArticles">
+                    </div>
                 </div>
-    
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">End of Year (Optional):</label>
-                    <input type="month" class="form-control" id="yearEnd">
-                </div>
-    
-                <div class="form">
-                    <button type="submit" class="btn submit mb-2"><i class="fa fa-search" aria-hidden="true"> </i> Search</button>
-                    <button type="submit" class="btn reset mb-2"><i class="fa fa-trash" aria-hidden="true"> </i> Clear Results</button>
-                </div>
-            </div>
-            
-            <div class="secondaryContainer">
-                <div class="form-group">
-                    <label class="topArticles d-block p-3"><i class="fa fa-calendar" aria-hidden="true"> </i> Top Articles</label>
-                    <input type="text" class="form-control" id="topArticles">
-                </div>
-            
-            </div>
-        
             </form>
+        </section>
     </div>
     <script src="javascript/java.js"></script>
 </body>
